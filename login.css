@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #799431;
+    background-image: url(images/background.png);
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 600px;
+    border-radius: 40px;
+    backdrop-filter: blur(20px);
+    background: rgba( 255, 255, 255, 0.2 );
+}
+
+.leftside {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 100%;
+    background-color: #ede9f3;
+    padding: 50px;
+}
+h1 {
+    margin-bottom: 30px;
+}
+fieldset {
+    margin-bottom: 20px;
+    border: 2px solid #799431;
+    padding: 10px;
+}
+fieldset legend {
+    font-weight: bold;
+}
+.rightside input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    outline: 0;
+    height: 40px;
+}
+.rightside label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#button-login {
+    background-color: #799431;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+}
+#button-login:hover {
+    background-color: #FF7F00;
+}
+a {
+    color: #FF7F00;
+}
+a:hover {
+    color: #FF7F00;
+}
+
+.error {
+    font-size: 11px;
+    background-color: #FF7F00;
+    color: white;
+    padding: 4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

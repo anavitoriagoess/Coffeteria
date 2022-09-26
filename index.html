@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Link Slick CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <title>Coffeteria</title>
+  </head>
+  <body>
+    <!-- Section: Hero Area-->
+    <div class="container">
+      <div class="container__rightside">
+        <div class="hero__text">
+          <strong>Comece seu dia com um café</strong>
+          <div class="hero__text--divisor"></div>
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            cursus, nulla id facilisis aliquet, sapien orci accumsan eros, et
+            tempus magna nisl vitae leo.
+          </span>
+          <a href="#our-best" class="btn button--border">Compre agora</a>
+        </div>
+      </div>
+      <div class="container__leftside">
+        <div class="header">
+          <nav class="links__header">
+            <a href="#services">serviços</a>
+            <a href="#contact">contato</a>
+            <button
+              class="botoes"
+              id="redirect"
+              onclick="redirectToLogin()"
+            ></button>
+          </nav>
+        </div>
+        <div class="image">
+          <img src="images/hero2.png" alt="" srcset="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Section: Our services -->
+    <section class="container__our-services" id="services">
+      <h1>Nossos Serviços</h1>
+      <div class="service__content"></div>
+    </section>
+
+    <!-- Section: Our Best -->
+    <section class="containter__our-best" id="our-best">
+      <h1 class="our-best--title">Nosso melhor Café</h1>
+      <div class="cards-container"></div>
+      <div class="see-cart--content">
+        <button class="see-cart">Ver carrinho</button>
+      </div>
+      <div class="modal">
+        <div class="content"></div>
+      </div>
+    </section>
+
+    <!-- Section: Contact Us -->
+    <section class="container__contact-us" id="contact">
+      <h1>Contato</h1>
+      <div class="contact-us__content">
+        <form method="POST" action="#" class="validator" id="form">
+          <fieldset>
+            <legend>Seu nome:*</legend>
+            <input
+              type="text"
+              name="user_name"
+              data-rules="required|min=4"
+              id="user_name"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Seu e-mail:*</legend>
+            <input
+              type="text"
+              name="user_email"
+              data-rules="required|email"
+              id="user_email"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Seu telefone:</legend>
+            <input
+              type="tel"
+              name="user_phone"
+              id="user_phone"
+              pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"
+              placeholder="11 999999-9999"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Descrição:*</legend>
+            <textarea
+              name="user_message"
+              cols="30"
+              rows="10"
+              id="user_message"
+              required
+            ></textarea>
+          </fieldset>
+
+          <label>
+            <input type="submit" value="Enviar" id="button" />
+          </label>
+        </form>
+        <img src="images/form.jpeg" alt="#" class="contact-us--img" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container footer"></footer>
+
+    <!-- slick-carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Arquivos js -->
+    <script src="produtosJson.js"></script>
+    <script src="validator.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
